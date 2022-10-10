@@ -20,10 +20,10 @@ def play_game():
         if guess < number:
             guess_limit-= 1
             print("guess higher")
-            print(f'you are losing one more live {guess_limit}')
+            print(f'WRONG GUESS, you are losing one more live {guess_limit}')
             if guess_limit == 0:
-                print('You have no lives left: "Lost"')
-                play_game()
+                print('You have no lives left: "Lost" GAME OVER')
+                return
                 
         elif guess > number:
             print("guess lower")    
