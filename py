@@ -9,9 +9,11 @@ number  = random.randint(1, 100)
 def play_game():
     level = input("Do you want to play 'hard' or 'easy' level? \n")
     if level == 'hard':
-        guess_limit= 2
+        guess_limit= 5
+        print(f'You select the  hard level you have {guess_limit} guesses')
     else:
-        guess_limit= 7
+        guess_limit= 10
+        print(f'You select the easy level you have {guess_limit} guesses')
 
         
     while guess_number != True:
